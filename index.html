@@ -8,36 +8,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <meta name="theme-color" content="#44c8f5">
 
-    <link rel="shortcut icon" href="favicon.svg" type="mct-logo">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" type="mct-logo">
-    <link rel="android-touch-icon" href="google-touch-icon.png" type="mct-logo">
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="google-touch-icon" href="google-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/elements.page.css">
   </head>
   <body>
     <header>
+      <nav>
+        <ul>
+          <li><a href="#heading2">Heading 2</a></li>
+          <li><a href="#heading3">Heading 3</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#table">Table</a></li>
+        </ul>
+      </nav>
       <h1>Hello world! This is my HTML5 boilerplate.</h1>
       <p>A Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.</p>
     </header>
-    <h2>Heading 2</h2>
+    <h2 id="heading2">Heading 2</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. This is a <a href="test.com">standard link</a> distinctio facilis excepturi, reprehenderit pariatur odit, velit mollitia saepe impedit reiciendis omnis quasi sed, facere quo nobis a blanditiis.</p>
-    <h3>Heading 3</h3>
+    <h3 id="heading3">Heading 3</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. This is a <a href="https://www.google.com">visited link</a> hic nemo dicta dignissimos dolorum obcaecati nobis tenetur laudantium iusto quibusdam vero velit magnam quam quas! Iure nobis minima accusamus fuga.</p>
     <blockquote cite="http://www.htmldog.com/reference/htmltags/blockquote/">
       <p>A blockquote is a large quotation. The content of a blockquote element must include block-level elements such as headings, lists, paragraphs or div’s. This element can also have an optional attribute cite that specifies the location (in the form of a URI) where the quote has come from.</p>
     </blockquote>
     <h3>Styling lists is easy</h3>
     <p>Add an unorderd list with 3 list items here</p>
-    <table>
+    <table id="table">
         <tr>
             <th>Country</th>
             <th>Capital</th>
             <th>Population</th>
             <th>Language</th>
         </tr>
-        <tr>
+        <tr class="odd">
             <td>Usa</td>
             <td>Washington, DC</td>
             <td>309mil</td>
@@ -49,7 +58,7 @@
             <td>9mil</td>
             <td>Swedish</td>
         </tr>
-        <tr>
+        <tr class="odd">
             <td>France</td>
             <td>Paris</td>
             <td>10mil</td>
@@ -64,8 +73,13 @@
     </table>
     <figure>
         <img src="img/yawning-cat.jpeg" alt="Picture of a yawning cat">
-        <figcaption>yawning cat - photo by Martina Misar</figcaption>
+          <figcaption>yawning cat - photo by Martina Misar</figcaption>
     </figure>
+    <ul>
+      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, blanditiis!</li>
+      <li>Corrupti debitis expedita alias odio pariatur soluta quod nisi similique!</li>
+      <li>Magni, voluptates doloribus. Iste et non possimus minima, laborum eveniet!</li>
+    </ul>
     <hr />
     <footer>
       <p>By <strong>Your name</strong></p>
